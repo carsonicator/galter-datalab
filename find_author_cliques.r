@@ -4,7 +4,7 @@
 # 
 # This script takes a list of researchers and identifies all combinations of n persons who share
 # publication authorship within a specified date range. Publications are taken from PubMed using
-# the RISmed
+# the RISmed package.
 # 
 #
 # output: a 4-column data frame containing:

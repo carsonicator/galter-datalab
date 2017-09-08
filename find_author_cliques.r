@@ -22,7 +22,7 @@
 #
 # See https://gist.github.com/macieksk/a139d451e8de3b71225d884671b45915 for more examples of using RISMed
 
-# Keep track of the running time. Start the clock!
+# Keep track of the running time
 ptm <- proc.time()
 
 # Set location variables
@@ -116,5 +116,3 @@ write.csv(df, file = OUTPUT_FILE, row.names = FALSE)
 
 # Stop the clock
 proc.time() - ptm
-
-

@@ -16,10 +16,13 @@ database = 'pubmed'
 min_date = '2000'
 max_date = '2016'
 
+# Perform the search and get a summary
 res <- EUtilsSummary("Carson MB[au]", type=search_type, db=database, mindate=min_date, maxdate=max_date)
 
+# Show all attributes of the search result
 attributes(res)
 
+# Download the full results of the query and show the attributes
 q <- EUtilsGet(res)
 attributes(q)
 ```

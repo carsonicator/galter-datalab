@@ -30,6 +30,10 @@ TARGET_DIR = "dir_name"
 INPUT_FILE = "input_file_name"
 OUTPUT_FILE = 'output_file_name'
 
+# Define a number of queries to run before waiting a specificed number of seconds to continue (prevent throttling)
+QUERY_COUNT = 20
+QUERY_WAIT_TIME = 10
+
 # Search settings
 search_type ='esearch'
 database = 'pubmed'
@@ -76,33 +80,45 @@ search_list <- combn(search_names, 3, function(x) paste(x[[1]],"[AU] AND",x[[2]]
 print("done!!!")
 
 # Create a round counter for testing purposes
-round = 1
+round <- 1
 
 # Create a list to store combinations of authors with one or more shared publications
 l <- list()
 list_index <- 1
 
 total_count <- length(search_list)
+wait_count <- 1
 
 for (i in search_list) {
 
 	# Perform the PubMed search
 	res <- EUtilsSummary(i, type=search_type, db=database, mindate=min_date, maxdate=max_date)
-	
+
 	# Capture the number of pubs shared
-	q_count = QueryCount(res)
+	q_count <- QueryCount(res)
 
 	if (q_count > 0) {
 		# Convert the res@PMID array
 		PMIDs <- paste(as.character(res@PMID), collapse = "|")
 		l[[list_index]] <- c(i,res@count, PMIDs, res@querytranslation)
 		list_index <- list_index + 1
+		attributes(res)
+		q <- EUtilsGet(res)
+		attributes(q)
 	}
 	# For diagnostic purposes
 	#if (round == 10) break
+
+	# Wait before running the next query if we have reached the limit
+	if (wait_count == QUERY_COUNT + 1) {
+		print(paste("Waiting", QUERY_WAIT_TIME, "seconds..."))
+		Sys.sleep(QUERY_WAIT_TIME)
+		wait_count <- 1
+	}
 	print(paste("Round", round, "of", total_count))
 
-	round = round + 1
+	round <- round + 1
+	wait_count <- wait_count + 1
 }
 
 # Create a data frame from the list of authors sharing publication authorship

@@ -26,3 +26,7 @@ attributes(res)
 q <- EUtilsGet(res)
 attributes(q)
 ```
+
+## _get_lat_lon.r_
+
+This script takes a list of institution names from an Excel file, queries the GeoNames Database to retrieve latitude and longitude, merges this data with the original data frame, and writes the results to a .csv file

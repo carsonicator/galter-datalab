@@ -37,7 +37,7 @@ The output is a 4-column data frame containing:
 
 | Authors                                              | Pub_Count | PubMed_IDs                  | Query_Translation               |
 | ---------------------------------------------------- |:---------:|:---------------------------:| -------------------------------:|
-| Author A [AU] AND Author B [AU] AND Author C [AU]    | 3         | 10298379|69402350|97459823  | [Actual query passed to PubMed] |
+| Author A [AU] AND Author B [AU] AND Author C [AU]    | 3         | 10298379\|69402350\|97459823  | [Actual query passed to PubMed] |
 | Author A [AU] AND Author B [AU] AND Author D [AU]    | 1         | 98756455                    | [Actual query passed to PubMed] |
 | Author A [AU] AND Author C [AU] AND Author D [AU]    | 1         | 23455425                    | [Actual query passed to PubMed] |
 | ...                                                  | ...       | ...                         | ...                             |

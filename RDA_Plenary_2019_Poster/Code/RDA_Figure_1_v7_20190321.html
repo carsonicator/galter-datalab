@@ -1,0 +1,230 @@
+<html>
+<body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 2400px; height: 2400px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {
+    callback: function () {
+      drawChart();
+      window.addEventListener('resize', drawChart, false);
+    },
+    packages:["sankey"]
+  });
+  google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'From');
+  data.addColumn('string', 'To');
+  data.addColumn('number', 'Weight');
+  data.addRows([
+
+    // First column (High-level Functional Requirements)
+    ['Administrator Functions and Pages', 'Notify repository manager upon resource upload', 1],
+    ['Administrator Functions and Pages', 'Ability to edit/delete any record', 1],
+    ['Administrator Functions and Pages', 'Batch update fields across multiple records', 1],
+    ['Administrator Functions and Pages', 'Organization records: populate thru API', 1],
+    ['Administrator Functions and Pages', 'Track visits and website usage', 1],
+    ['Administrator Functions and Pages', 'Track altmetrics', 1],
+    ['Administrator Functions and Pages', 'Resources: Link to blank DUA. link to License websites, etc', 1],
+    ['Administrator Functions and Pages', 'Link Help from NavBar', 1],
+
+    ['Collections Pages', 'Collection Homepage: description and images', 1],
+    ['Collections Pages', 'Collection-only search bar', 1],
+    ['Collections Pages', 'Collection-specific metadata', 1],
+    ['Collections Pages', 'Share private collections', 1],
+    ['Collections Pages', 'Breadcrumb: location within a Collection', 1],
+    ['Collections Pages', 'Collection Administrator permissions/functions', 1],
+
+    ['Download requirements', 'Implement common citation styles', 1],
+    ['Download requirements', 'Required download pop-up : DUA, license, citation', 1],
+
+    ['Interoperability', 'Support current and legacy browsers', 1],
+    ['Interoperability', 'Enable record discovery thru OAI-PMH', 1],
+    ['Interoperability', 'Allow record discovery thru Scholix', 1],
+    ['Interoperability', 'Linked data/RDF vocabs for CC Licenses, ORCiD, ISO language codes, Geonames locations', 1],
+    ['Interoperability', 'Schema.org and JSON metadata markup', 1],
+    ['Interoperability', 'Style header and footer for mobile', 1],
+    ['Interoperability', 'Create a DOI API/Service', 1],
+    ['Interoperability', 'Implement HTML Signposting', 1],
+
+    ['Resource Creation Page', 'Display thumbnails from uploaded files', 1],
+    ['Resource Creation Page', 'Harvest file characterization metadata', 1],
+    ['Resource Creation Page', 'Links to external and internal resources', 1],
+    ['Resource Creation Page', 'Mint DOI for record', 1],
+    ['Resource Creation Page', 'Offer record licensing options', 1],
+    ['Resource Creation Page', 'User-generated dynamic keyword list', 1],
+    ['Resource Creation Page', 'Integrate GitHub for file upload', 1],
+    ['Resource Creation Page', 'Integrate ontologies for subject fields', 1],
+    ['Resource Creation Page', 'Batch file uploads (to different records)', 1],
+    ['Resource Creation Page', 'Retain previous record/file versions', 1],
+    ['Resource Creation Page', 'Optimize for Google Scholar and Google Dataset Search', 1],
+
+    ['Resource Page', 'Item-level analytics', 1],
+    ['Resource Page', 'Altmetrics badge', 1],
+    ['Resource Page', 'Directly download resource in same format as upload', 1],
+    ['Resource Page', 'Preview PDFs, images using IIIF', 1],
+
+    ['Search Functions and Results Page', 'Browse by list of homegrown keywords', 1],
+    ['Search Functions and Results Page', 'Implement fields for record sort', 1],
+    ['Search Functions and Results Page', 'Implement record filters', 1],
+    ['Search Functions and Results Page', 'Retain search terms', 1],
+    ['Search Functions and Results Page', 'Search using AND, OR and NOT operators', 1],
+    ['Search Functions and Results Page', 'Start Over button', 1],
+    ['Search Functions and Results Page', 'Browse by resource type, geographic coverage, date created, and Creator', 1],
+    ['Search Functions and Results Page', 'Browse by controlled subject terms', 1],
+    ['Search Functions and Results Page', 'Date and timeframe filtering sliders', 1],
+
+    ['User Account Functions and Pages', 'Analytics pages for individual records', 1],
+    ['User Account Functions and Pages', 'Bookmark favorite records', 1],
+    ['User Account Functions and Pages', 'Grant/receive proxy privileges on records', 1],
+    ['User Account Functions and Pages', 'Link to ORCiD account', 1],
+    ['User Account Functions and Pages', 'Receive notifications and requests for materials', 1],
+    ['User Account Functions and Pages', 'Activity feed and social functions', 1],
+    ['User Account Functions and Pages', 'Approve other researchers\' data access requests', 1],
+    ['User Account Functions and Pages', 'See list of all records, published or unpublished', 1],
+    ['User Account Functions and Pages', 'Control Co-PI approval for records/deposits', 1],
+    ['User Account Functions and Pages', 'Wizard to generate data sharing/mgmt plans', 1],
+    ['User Account Functions and Pages', 'Aggregate analytics page for total user uploads', 1],
+
+    ['User Login', 'Local users login thru LDAP', 1],
+
+    // Second column (Sub-functional Requirements (skip))
+
+    // Third column (DigitalHub & Invenio 3)
+    ['Ability to edit/delete any record', 'DigitalHub & Invenio v3', 1],
+    ['Altmetrics badge', 'DigitalHub & Invenio v3', 1],
+    ['Analytics pages for individual records', 'DigitalHub & Invenio v3', 1],
+    ['Collection Homepage: description and images', 'DigitalHub & Invenio v3', 1],
+    ['Collection-only search bar', 'DigitalHub & Invenio v3', 1],
+    ['Collection-specific metadata', 'DigitalHub & Invenio v3', 1],
+    ['Display thumbnails from uploaded files', 'DigitalHub & Invenio v3', 1],
+    ['Harvest file characterization metadata', 'DigitalHub & Invenio v3', 1],
+    ['Implement common citation styles', 'DigitalHub & Invenio v3', 1],
+    ['Implement fields for record sort', 'DigitalHub & Invenio v3', 1],
+    ['Implement record filters', 'DigitalHub & Invenio v3', 1],
+    ['Item-level analytics', 'DigitalHub & Invenio v3', 1],
+    ['Links to external and internal resources', 'DigitalHub & Invenio v3', 1],
+    ['Mint DOI for record', 'DigitalHub & Invenio v3', 1],
+    ['Offer record licensing options', 'DigitalHub & Invenio v3', 1],
+    ['Retain search terms', 'DigitalHub & Invenio v3', 1],
+    ['Search using AND, OR and NOT operators', 'DigitalHub & Invenio v3', 1],
+    ['Support current and legacy browsers', 'DigitalHub & Invenio v3', 1],
+    ['Track altmetrics', 'DigitalHub & Invenio v3', 1],
+    ['Track visits and website usage', 'DigitalHub & Invenio v3', 1],
+
+    // Fourth column (DigitalHub Only)
+    ['Bookmark favorite records', 'DigitalHub Only', 1],
+    ['Browse by controlled subject terms', 'DigitalHub Only', 1],
+    ['Grant/receive proxy privileges on records', 'DigitalHub Only', 1],
+    ['Integrate ontologies for subject fields', 'DigitalHub Only', 1],
+    ['Link Help from NavBar', 'DigitalHub Only', 1],
+    ['Local users login thru LDAP', 'DigitalHub Only', 1],
+    ['Resources: Link to blank DUA. link to License websites, etc', 'DigitalHub Only', 1],
+    ['Share private collections', 'DigitalHub Only', 1],
+
+    // Fifth column (Invenio v3 Only)
+    ['User-generated dynamic keyword list', 'Invenio v3 Only', 1],
+    ['Integrate GitHub for file upload', 'Invenio v3 Only', 1],
+    ['Retain previous record/file versions', 'Invenio v3 Only', 1],
+    ['Directly download resource in same format as upload', 'Invenio v3 Only', 1],
+    ['Preview PDFs, images using IIIF', 'Invenio v3 Only', 1],
+    ['Link to ORCiD account', 'Invenio v3 Only', 1],
+    ['Receive notifications and requests for materials', 'Invenio v3 Only', 1],
+    ['Approve other researchers\' data access requests', 'Invenio v3 Only', 1],
+    ['Enable record discovery thru OAI-PMH', 'Invenio v3 Only', 1],
+    ['Allow record discovery thru Scholix', 'Invenio v3 Only', 1],
+    ['Linked data/RDF vocabs for CC Licenses, ORCiD, ISO language codes, Geonames locations', 'Invenio v3 Only', 1],
+    ['Schema.org and JSON metadata markup', 'Invenio v3 Only', 1],
+    ['Create a DOI API/Service', 'Invenio v3 Only', 1],
+    ['Style header and footer for mobile', 'Invenio v3 Only', 1],
+    ['Collection Administrator permissions/functions', 'Invenio v3 Only', 1],
+
+    // Sixth column (New Features)
+    ['Batch file uploads (to different records)', 'New Features', 1],
+    ['Optimize for Google Scholar and Google Dataset Search', 'New Features', 1],
+    ['Activity feed and social functions', 'New Features', 1],
+    ['See list of all records, published or unpublished', 'New Features', 1],
+    ['Control Co-PI approval for records/deposits', 'New Features', 1],
+    ['Wizard to generate data sharing/mgmt plans', 'New Features', 1],
+    ['Aggregate analytics page for total user uploads', 'New Features', 1],
+    ['Implement HTML Signposting', 'New Features', 1],
+    ['Start Over button', 'New Features', 1],
+    ['Browse by resource type, geographic coverage, date created, and Creator', 'New Features', 1],
+    ['Browse by list of homegrown keywords', 'New Features', 1],
+    ['Date and timeframe filtering sliders', 'New Features', 1],
+    ['Breadcrumb: location within a Collection', 'New Features', 1],
+    ['Required download pop-up : DUA, license, citation', 'New Features', 1],
+    ['Notify repository manager upon resource upload', 'New Features', 1],
+    ['Batch update fields across multiple records', 'New Features', 1],
+    ['Organization records: populate thru API', 'New Features', 1],
+
+    // Fifth column (menRva)
+    ['DigitalHub & Invenio v3', 'menRva', 20],
+    ['DigitalHub Only', 'menRva', 8],
+    ['Invenio v3 Only', 'menRva', 15],
+    ['New Features', 'menRva', 17]
+
+  ]);
+
+  // Set chart options
+  var node_colors = ["#771155", "#AA4488", "#CC99BB", "#114477", "#4477AA", "#77AADD", "#117777", "#44AAAA", "#77CCCC", "#117744", "#44AA77", "#88CCAA", "#777711", "#AAAA44", "#DDDD77", "#774411", "#AA7744", "#DDAA77", "#771122", "#AA4455", "#DD7788", "#4477AA", "#4477AA", "#4477AA", "#4477AA"]
+  var link_colors = ["#771155", "#AA4488", "#CC99BB", "#114477", "#4477AA", "#77AADD", "#117777", "#44AAAA", "#77CCCC", "#117744", "#44AA77", "#88CCAA", "#777711", "#AAAA44", "#DDDD77", "#774411", "#AA7744", "#DDAA77", "#771122", "#AA4455", "#DD7788", "#4477AA", "#4477AA", "#4477AA", "#4477AA"];
+
+    var options = {
+      width: 1600,
+      height: 1200,
+      sankey: {
+        node: {
+          interactivity: true,
+          colors: node_colors,
+          //colorMode: 'gradient',
+          width: 10,
+          nodePadding: 10,
+          labelPadding: 10,
+          label: { fontName: 'Calibri',
+                         fontSize: 14,
+                         bold: true,
+                         italic: false }
+        },
+        link: {
+          color: { fillOpacity: 1 } ,
+          colorMode: 'gradient',
+          colors: link_colors
+        }
+      }
+    };
+
+  // Instantiate and draw our chart, passing in some options.
+  var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+
+  // https://stackoverflow.com/questions/42917507/hyperlinks-when-clicking-on-google-sankey-nodes
+  // https://jsfiddle.net/q8gc9ord/1/
+  google.visualization.events.addListener(chart, 'select', function() {
+  var sel = chart.getSelection();
+  if (sel.length) {
+    switch (sel[0].name) {
+      case 'menRva':
+        window.open('https://github.com/data2health/menRva');
+        break;
+
+      case 'DigitalHub Only':
+        window.open('http://digitalhub.northwestern.edu');
+        break;
+
+      case 'Invenio v3 Only':
+        window.open('https://invenio-software.org/');
+        break;
+
+      default:
+        break;
+    }
+  }
+});
+  chart.draw(data, options);
+}
+</script>
+</body>
+</html>

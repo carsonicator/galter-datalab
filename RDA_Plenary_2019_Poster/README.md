@@ -8,4 +8,4 @@ The poster outlines in brief Galter Health Sciences Library's development and im
 
 This repository is for the code used to generate the figures included in the poster.
 
-This poster (available on [DigitalHub.](10.18131/g3-b7wj-vh65)) was presented at the Research Data Alliance's 13th Plenary in Philadelphia, PA, April 1 - 4, 2019 and won third prize in the Best Poster Award competition.
+This poster (available on [DigitalHub.](http://www.doi.org/10.18131/g3-b7wj-vh65)) was presented at the Research Data Alliance's 13th Plenary in Philadelphia, PA, April 1 - 4, 2019 and won third prize in the Best Poster Award competition.

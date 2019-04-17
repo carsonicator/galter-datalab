@@ -23,11 +23,13 @@ rect {
 
   <div class="viz"></div>
 
-  <svg width="33cm" height="38cm">
-    <g></g>
-  </svg>
+  <div>
+    <svg width="40cm" height="24cm">
+      <g></g>
+    </svg>
+  </div>
 
-  <script src="./d3/d3.min.js"></script>
+  <script src="../d3.min.js"></script>
 
   <script>
 
@@ -38,70 +40,70 @@ rect {
       ["Discovery through navigation", "COAR Guiding Principles"],
       ["Batch discovery", "COAR Guiding Principles"],
       ["Preserving resources", "COAR Guiding Principles"],
-      ["Declare licenses...", "COAR Guiding Principles"],
+      ["License Resources", "COAR Guiding Principles"],
       ["Resource transfer", "COAR Guiding Principles"],
       ["Interacting with resources", "COAR Guiding Principles"],
       ["Collecting and exposing activities", "COAR Guiding Principles"],
-      ["Exposing standardized usage metrics", "COAR Guiding Principles"],
       ["Authentication of users", "COAR Guiding Principles"],
       ["Exposing identifiers", "COAR Guiding Principles"],
+      ["Exposing standardized usage metrics", "COAR Guiding Principles"],
 
-      ["Author field (repeating)", "Identification of users"],
+      ["Authors", "Identification of users"],
       ["MeSH Keywords", "Discovery through navigation"],
       ["LCHS Keywords", "Discovery through navigation"],
-      ["File characterization", "Batch discovery"],  // "File characterization metadata"
+      ["Coll. Sharing", "Batch discovery"],  // Share private collections
       ["Mint DOI", "Preserving resources"],
       ["User keywords", "Discovery through navigation"],  // User-supplied
-      ["Licenses", "Declare licenses..."],  // shortened name from Declare licenses at ressource level
+      ["Licenses", "License Resources"],  // shortened name from Declare licenses at ressource level
       ["Link resources", "Discovery through navigation"],
       ["Access levels", "Preserving resources"],  // Multiple record access levels
-      ["Proxy record creation", "Identification of users"],
+      ["Proxy creation", "Identification of users"],
       ["Link GitHub",  "Resource transfer"],  // GitHub for file upload
       ["Batch uploads",  "Resource transfer"],  // Batch file uploads
       ["Metadata edit", "Discovery through navigation"],
       // ["Edit records",  "Preserving resources"],
-      ["Embargo", "Resource transfer"],
+      ["Download Pop-up", "Resource transfer"],  // Required download pop-up : DUA, license, citation
       ["Thumbnails", "Interacting with resources"],
       ["Versioning", "Preserving resources"],  // Retain previous record/file versions
       ["Altmetrics",  "Collecting and exposing activities"],  // Track Altmetrics
       ["Field -> Search",  "Discovery through navigation"],  // Fields prompt new search
-      ["Item-level analytics",  "Exposing standardized usage metrics"],
+      // ["Item-level analytics",  "Exposing standardized usage metrics"],
       ["Altmetrics badge",  "Exposing standardized usage metrics"],
-      ["Download files",  "Resource transfer"],  // Download resource in same format as upload
+      ["Access Request/Approval",  "Resource transfer"],  // Approve data access requests
       ["IIIF", "Interacting with resources"],
-      ["Manage account settings", "Identification of users"],
+      ["Account Settings", "Identification of users"],
       ["Terms of Use", "Resource transfer"],  // Agree to terms of use
-      ["Link ORCiD account",  "Authentication of users"],
-      ["Access Requests",  "Resource transfer"],  // Notifications and requests for materials
+      ["ORCiD",  "Authentication of users"],
+      // ["Access Requests",  "Resource transfer"],  // Notifications and requests for materials
       ["Social", "Interacting with resources"],  // Manage social functions
       ["News feed", "Collecting and exposing activities"],
       // ["Cross-CD2H Activity feed",  "Collecting and exposing activities"],  See News Feed
       ["Bookmark",  "Interacting with resources"],
       ["CRU(D) records", "Preserving resources"],  // Create/edit/delete records/deposits
-      ["Access approval",  "Resource transfer"],  // Approve data access requests
+      ["Download files",  "Resource transfer"],  // Download resource in same format as upload
       ["See *all* records", "Preserving resources"],  // See all records, published or unpublished
-      ["Approval", "Resource transfer"],  // Control Co-PI approval for deposits
+      ["Embargo", "Resource transfer"],
       ["DMP wizard", "Preserving resources"],
       ["Record Analytics",  "Exposing standardized usage metrics"],  // Analytics for individual records
       ["Aggregate analytics", "Exposing standardized usage metrics"],  // Aggregate analytics: total user uploads
       ["Anonymous permission",  "Authentication of users"],  // General user: search, read, download
       ["User permissions", "Authentication of users"],  // Logged-in user: search, read, deposit, edit, download
       ["Staff permissions",  "Authentication of users"],  // Administrator: all actions except delete
-      ["Superuser actions", "Preserving resources"],
+      ["Help", "Preserving resources"],  // Link Help from NavBar
       // ["Support varied browsers", "Discovery through navigation"],  // Support current and legacy browsers
       ["OAI-PMH discovery", "Batch discovery"],  // Record discovery thru OAI-PMH
       ["Scholix discovery", "Batch discovery"],
-      ["Linked data", "Discovery through navigation"],  //  for CC Licenses, ORCiD, ISO language codes, Geonames locations
-      ["Schema.org", "Discovery through navigation"],  // Schema.org and JSON metadata markup
+      ["Coll. Breadcrumb",  "Discovery through navigation"],  // Breadcrumb: location within a Collection
+      ["AND/OR/NOT Search Operators",  "Discovery through navigation"],  // Search using AND, OR and NOT operators
       ["Expose DOI", "Exposing identifiers"],  // Create DOI API/Service
       ["Signposting",  "Exposing identifiers"],  // HTML Signposting
       ["LDAP",  "Authentication of users"],  // LDAP login
       // ["Retain search terms", "Discovery through navigation"],
       // ["Clear Search", "Discovery through navigation"],  // Start Over button
-      ["Faceting",  "Discovery through navigation"],
+      ["Keyword Browse",  "Discovery through navigation"],
       ["Organizations",  "Discovery through navigation"],  // Organizations: populate thru API
       // ["Search by Subject or Keyword",  "Discovery through navigation"],
-      ["Keyword Browse",  "Discovery through navigation"],
+      ["Faceting",  "Discovery through navigation"],
       // ["Browse by select fields", "Discovery through navigation"],  // resource type, geographic coverage, date created, and Creator
       ["Sort by...",  "Discovery through navigation"],  // Record sort fields
       ["Author/Title/Keyword Search",  "Discovery through navigation"],
@@ -109,15 +111,15 @@ rect {
       ["Coll. Homepage", "Discovery through navigation"],  // : description and images
       ["Coll. Search",  "Discovery through navigation"],  // Collection-only search bar
       ["Coll. Metadata",  "Discovery through navigation"],  // Collection-specific metadata
-      ["Coll. Sharing", "Batch discovery"],  // Share private collections
-      ["Coll. Breadcrumb",  "Discovery through navigation"],  // Breadcrumb: location within a Collection
+      ["File characterization", "Batch discovery"],  // "File characterization metadata"
+      ["Linked data", "Discovery through navigation"],  //  for CC Licenses, ORCiD, ISO language codes, Geonames locations
       ["Coll. Permissions",  "Authentication of users"],  // Administrator permissions/functions
       ["Citations",  "Exposing identifiers"],  // Common citation styles
-      ["Download Pop-up", "Resource transfer"],  // Required download pop-up : DUA, license, citation
-      ["Help", "Preserving resources"],  // Link Help from NavBar
+      ["Deposit Request/Approval", "Resource transfer"],  // Control Co-PI approval for deposits
+      ["Superuser actions", "Preserving resources"],
       // ["Admin edit/delete any record",  "Preserving resources"],
       ["Batch updates", "Preserving resources"],  // Batch update fields across multiple records
-      ["AND/OR/NOT Search Operators",  "Discovery through navigation"],  // Search using AND, OR and NOT operators
+      ["Schema.org", "Discovery through navigation"],  // Schema.org and JSON metadata markup
       ["Track usage",  "Collecting and exposing activities"],  // Track visits and website usage
       ["Google Scholar/Dataset", "Collecting and exposing activities"],  // Google Scholar, and Google Dataset Search
       ["Contact page", "Preserving resources"],  // Contact us page
@@ -135,16 +137,21 @@ rect {
       return 1;
     });
 
+    // ratio = 1 : 575/875
+    var ratio = 24/40
+    var w = 1500
     var treemapLayout = d3.treemap()
-      .size([1100, 1100])
+      .size([w, w*ratio])
       .paddingInner(15)
-      .paddingOuter(15);
+      .paddingOuter(15)
+      .tile(d3.treemapBinary);
     treemapLayout(root);
 
     const color = d3.scaleOrdinal(d3["schemePaired"])
 
     d3.select('svg g')
       .style("font", "10px sans-serif")
+      .style("font-weight", "bold")
       .selectAll('rect')
       .data(root.descendants())
       .enter()

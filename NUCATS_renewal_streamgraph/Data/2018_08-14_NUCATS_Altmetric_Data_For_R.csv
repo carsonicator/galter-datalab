@@ -1,0 +1,201 @@
+﻿Row Labels,Category,Count
+2008,Sum of News mentions,2
+2009,Sum of News mentions,3
+2010,Sum of News mentions,26
+2011,Sum of News mentions,28
+2012,Sum of News mentions,138
+2013,Sum of News mentions,176
+2014,Sum of News mentions,102
+2015,Sum of News mentions,191
+2016,Sum of News mentions,497
+2017,Sum of News mentions,1449
+2018,Sum of News mentions,56
+2008,Sum of Blog mentions,11
+2009,Sum of Blog mentions,13
+2010,Sum of Blog mentions,14
+2011,Sum of Blog mentions,68
+2012,Sum of Blog mentions,129
+2013,Sum of Blog mentions,39
+2014,Sum of Blog mentions,21
+2015,Sum of Blog mentions,64
+2016,Sum of Blog mentions,46
+2017,Sum of Blog mentions,131
+2018,Sum of Blog mentions,4
+1900,Sum of Policy mentions,0
+1970,Sum of Policy mentions,0
+2008,Sum of Policy mentions,4
+2009,Sum of Policy mentions,11
+2010,Sum of Policy mentions,21
+2011,Sum of Policy mentions,18
+2012,Sum of Policy mentions,16
+2013,Sum of Policy mentions,14
+2014,Sum of Policy mentions,6
+2015,Sum of Policy mentions,4
+2016,Sum of Policy mentions,0
+2017,Sum of Policy mentions,0
+2018,Sum of Policy mentions,0
+2008,Sum of Twitter mentions,8
+2009,Sum of Twitter mentions,69
+2010,Sum of Twitter mentions,90
+2011,Sum of Twitter mentions,564
+2012,Sum of Twitter mentions,1322
+2013,Sum of Twitter mentions,894
+2014,Sum of Twitter mentions,750
+2015,Sum of Twitter mentions,1314
+2016,Sum of Twitter mentions,2812
+2017,Sum of Twitter mentions,6023
+2018,Sum of Twitter mentions,619
+2008,Sum of Patent mentions,30
+2009,Sum of Patent mentions,42
+2010,Sum of Patent mentions,26
+2011,Sum of Patent mentions,48
+2012,Sum of Patent mentions,47
+2013,Sum of Patent mentions,7
+2014,Sum of Patent mentions,20
+2015,Sum of Patent mentions,1
+2016,Sum of Patent mentions,2
+2017,Sum of Patent mentions,0
+2018,Sum of Patent mentions,0
+2008,Sum of Peer review mentions,0
+2009,Sum of Peer review mentions,1
+2010,Sum of Peer review mentions,1
+2011,Sum of Peer review mentions,9
+2012,Sum of Peer review mentions,1
+2013,Sum of Peer review mentions,0
+2014,Sum of Peer review mentions,18
+2015,Sum of Peer review mentions,0
+2016,Sum of Peer review mentions,0
+2017,Sum of Peer review mentions,0
+2018,Sum of Peer review mentions,0
+2008,Sum of Weibo mentions,0
+2009,Sum of Weibo mentions,0
+2010,Sum of Weibo mentions,0
+2011,Sum of Weibo mentions,0
+2012,Sum of Weibo mentions,0
+2013,Sum of Weibo mentions,0
+2014,Sum of Weibo mentions,2
+2015,Sum of Weibo mentions,3
+2016,Sum of Weibo mentions,0
+2017,Sum of Weibo mentions,0
+2018,Sum of Weibo mentions,0
+2008,Sum of Facebook mentions,1
+2009,Sum of Facebook mentions,4
+2010,Sum of Facebook mentions,9
+2011,Sum of Facebook mentions,30
+2012,Sum of Facebook mentions,126
+2013,Sum of Facebook mentions,72
+2014,Sum of Facebook mentions,52
+2015,Sum of Facebook mentions,139
+2016,Sum of Facebook mentions,191
+2017,Sum of Facebook mentions,327
+2018,Sum of Facebook mentions,21
+2008,Sum of Wikipedia mentions,1
+2009,Sum of Wikipedia mentions,8
+2010,Sum of Wikipedia mentions,7
+2011,Sum of Wikipedia mentions,19
+2012,Sum of Wikipedia mentions,7
+2013,Sum of Wikipedia mentions,9
+2014,Sum of Wikipedia mentions,0
+2015,Sum of Wikipedia mentions,3
+2016,Sum of Wikipedia mentions,3
+2017,Sum of Wikipedia mentions,4
+2018,Sum of Wikipedia mentions,1
+2008,Sum of Google+ mentions,0
+2009,Sum of Google+ mentions,2
+2010,Sum of Google+ mentions,1
+2011,Sum of Google+ mentions,9
+2012,Sum of Google+ mentions,27
+2013,Sum of Google+ mentions,15
+2014,Sum of Google+ mentions,37
+2015,Sum of Google+ mentions,39
+2016,Sum of Google+ mentions,25
+2017,Sum of Google+ mentions,28
+2018,Sum of Google+ mentions,6
+2008,Sum of LinkedIn mentions,0
+2009,Sum of LinkedIn mentions,0
+2010,Sum of LinkedIn mentions,0
+2011,Sum of LinkedIn mentions,0
+2012,Sum of LinkedIn mentions,0
+2013,Sum of LinkedIn mentions,0
+2014,Sum of LinkedIn mentions,0
+2015,Sum of LinkedIn mentions,0
+2016,Sum of LinkedIn mentions,0
+2017,Sum of LinkedIn mentions,0
+2018,Sum of LinkedIn mentions,0
+2008,Sum of Reddit mentions,1
+2009,Sum of Reddit mentions,0
+2010,Sum of Reddit mentions,0
+2011,Sum of Reddit mentions,1
+2012,Sum of Reddit mentions,5
+2013,Sum of Reddit mentions,2
+2014,Sum of Reddit mentions,2
+2015,Sum of Reddit mentions,4
+2016,Sum of Reddit mentions,2
+2017,Sum of Reddit mentions,15
+2018,Sum of Reddit mentions,0
+2008,Sum of Pinterest mentions,0
+2009,Sum of Pinterest mentions,0
+2010,Sum of Pinterest mentions,2
+2011,Sum of Pinterest mentions,1
+2012,Sum of Pinterest mentions,0
+2013,Sum of Pinterest mentions,0
+2014,Sum of Pinterest mentions,0
+2015,Sum of Pinterest mentions,0
+2016,Sum of Pinterest mentions,0
+2017,Sum of Pinterest mentions,0
+2018,Sum of Pinterest mentions,0
+2008,Sum of F1000 mentions,2
+2009,Sum of F1000 mentions,5
+2010,Sum of F1000 mentions,8
+2011,Sum of F1000 mentions,13
+2012,Sum of F1000 mentions,21
+2013,Sum of F1000 mentions,10
+2014,Sum of F1000 mentions,4
+2015,Sum of F1000 mentions,7
+2016,Sum of F1000 mentions,7
+2017,Sum of F1000 mentions,11
+2018,Sum of F1000 mentions,0
+2008,Sum of Q&A mentions,0
+2009,Sum of Q&A mentions,0
+2010,Sum of Q&A mentions,0
+2011,Sum of Q&A mentions,0
+2012,Sum of Q&A mentions,0
+2013,Sum of Q&A mentions,0
+2014,Sum of Q&A mentions,0
+2015,Sum of Q&A mentions,0
+2016,Sum of Q&A mentions,0
+2017,Sum of Q&A mentions,0
+2018,Sum of Q&A mentions,0
+2008,Sum of Video mentions,0
+2009,Sum of Video mentions,0
+2010,Sum of Video mentions,3
+2011,Sum of Video mentions,5
+2012,Sum of Video mentions,2
+2013,Sum of Video mentions,2
+2014,Sum of Video mentions,1
+2015,Sum of Video mentions,3
+2016,Sum of Video mentions,1
+2017,Sum of Video mentions,4
+2018,Sum of Video mentions,0
+2008,Sum of Syllabi mentions,0
+2009,Sum of Syllabi mentions,0
+2010,Sum of Syllabi mentions,0
+2011,Sum of Syllabi mentions,0
+2012,Sum of Syllabi mentions,0
+2013,Sum of Syllabi mentions,0
+2014,Sum of Syllabi mentions,0
+2015,Sum of Syllabi mentions,0
+2016,Sum of Syllabi mentions,0
+2017,Sum of Syllabi mentions,0
+2018,Sum of Syllabi mentions,0
+2008,Sum of Number of Mendeley readers,3672
+2009,Sum of Number of Mendeley readers,3639
+2010,Sum of Number of Mendeley readers,5613
+2011,Sum of Number of Mendeley readers,12501
+2012,Sum of Number of Mendeley readers,10898
+2013,Sum of Number of Mendeley readers,8491
+2014,Sum of Number of Mendeley readers,2909
+2015,Sum of Number of Mendeley readers,5491
+2016,Sum of Number of Mendeley readers,4324
+2017,Sum of Number of Mendeley readers,4387
+2018,Sum of Number of Mendeley readers,205

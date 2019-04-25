@@ -14,6 +14,8 @@ NUCATS_renewal_streamgraph.r
 
 ![NUCATS Streamgraph](https://github.com/carsonicator/GalterDataLab/blob/master/NUCATS_renewal_streamgraph/Images/streamgraph_output_example.png "Example use of the interactive HTML output of this script")
 
+[example](https://github.com/carsonicator/GalterDataLab/blob/master/NUCATS_renewal_streamgraph/NUCATS_streamgraph.html)
+
 ## Additional Information
 
 ### References:

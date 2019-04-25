@@ -14,8 +14,6 @@ NUCATS_renewal_streamgraph.r
 
 ![NUCATS Streamgraph](https://github.com/carsonicator/GalterDataLab/blob/master/NUCATS_renewal_streamgraph/Images/streamgraph_output_example.png "Example use of the interactive HTML output of this script")
 
-[example](https://github.com/carsonicator/GalterDataLab/blob/master/NUCATS_renewal_streamgraph/NUCATS_streamgraph.html)
-
 ## Additional Information
 
 ### References:
@@ -67,7 +65,7 @@ See also the full list of GalterDataLab [contributors](https://github.com/carson
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/carsonicator/GalterDataLab/blob/master/NUCATS_renewal_streamgraph/LICENSE) file for details
 
 ## Acknowledgments
 

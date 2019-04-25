@@ -34,7 +34,7 @@ This script requires the following libraries:
 Output from sessionInfo():
 
 .. code-block:: console
-    > sessionInfo()
+
     R version 3.4.2 (2017-09-28)
     Platform: x86_64-apple-darwin15.6.0 (64-bit)
     Running under: macOS High Sierra 10.13.6

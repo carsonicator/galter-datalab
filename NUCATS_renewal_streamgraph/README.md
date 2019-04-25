@@ -59,9 +59,9 @@ Output from sessionInfo():
 
 ## Authors
 
-* **Matt Carson** - *Initial work* - [carsonicator](https://github.com/carsonicator)
+* **Matt Carson** - [carsonicator](https://github.com/carsonicator)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the full list of GalterDataLab [contributors](https://github.com/carsonicator/GalterDataLab/graphs/contributors).
 
 ## License
 
